@@ -1,0 +1,97 @@
+{{ 'homme-banner.css' | asset_url | stylesheet_tag }}
+<link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+ <div class="row">
+   <div class="content--left">
+     <div class="content--box">
+       <div class="content--top-left">
+         {% if section.settings.content_top_left_text != blank %}
+           <p>{{ section.settings.content_top_left_text }}</p>
+         {% endif %}
+         <a class="button--white" href="#">{{ section.settings.content_top_left_link_label }}</a>
+       </div>
+       <div class="content--middle-left">
+         <h1>The Ultimate <br> <span>Mother's Day</span> <br> Surprise</h1>
+         <p>The perfect blend of softness & support for cherished moments of relaxation.</p>
+       </div>
+       <div class="content--bottom-left">
+           <a class="button--black" href="#">Shop pillows</a>
+       </div>
+     </div>
+   </div>
+   <div class="content--right">
+     <div class="swiper mySwiper">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide">
+           <img src="../assets/home-banner-img-1.png" alt="">
+           <a href="#" class="button--home-banner button--white button--full-width">
+             Pillows for Bedroom
+             {% include 'arrow-button' %}
+           </a>
+         </div>
+         <div class="swiper-slide">
+           <img src="../assets/home-banner-img-1.png" alt="">
+           <a href="#" class="button--home-banner button--white button--full-width">
+             Pillows for Bedroom
+           </a>
+         </div>
+         <div class="swiper-slide">
+           <img src="../assets/home-banner-img-1.png" alt="">
+           <a href="#" class="button--home-banner button--white button--full-width">
+             Pillows for Bedroom
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Home banner",
+  "class": "section home-banner-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "header",
+      "content": "Content on the top left"
+    },
+    {
+      "type": "text",
+      "id": "content_top_left_text",
+      "label": "Text",
+      "default": "Get 20% off the first purchase"
+    },
+    {
+      "type": "text",
+      "id": "content_top_left_link_label",
+      "label": "Button Label",
+      "default": "Learn More"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home banner"
+    }
+  ]
+}
+{% endschema %}

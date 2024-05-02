@@ -1,0 +1,114 @@
+.home-our-materials-section {
+    padding: 100px 0 0 0;
+}
+
+.home-our-materials-section .container {
+    padding: 0 144px;
+}
+
+.home-our-materials-section .heading-our-materials {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.home-our-materials-section .heading-our-materials p {
+    margin: 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.home-our-materials-section .heading-our-materials h2 {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.home-our-materials-section .heading-our-materials h2 span {
+    font-style: italic;
+}
+
+.home-our-materials-section .left-content {
+    min-width: 587px;
+    min-height: 495px;
+    position: relative;
+}
+
+.home-our-materials-section img {
+    border-radius: 20px;
+}
+
+.second-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home-our-materials-section .right-content {
+    max-width: 433px;
+}
+
+body {
+    --animation-speed: .5s;
+}
+.drawers input {
+    display: none;
+}
+.drawers .container-drawer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--animation-speed) ease-out;
+    gap: 20px;
+}
+.drawer {
+    overflow: hidden;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+label {
+    color: #000;
+    font-family: "Libre Baskerville";
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    opacity: .5;
+}
+
+.drawer-child {
+    padding: 32px 0;
+    border-bottom: 1px solid #EEE;
+}
+
+label .icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+}
+label:has(:checked) {
+    opacity: 1;
+    width: 100%;
+}
+label:has(:checked) + .container-drawer {
+    grid-template-rows: 1fr;
+}

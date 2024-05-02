@@ -1,0 +1,50 @@
+{{ 'home-special-choice.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+  <div class="row">
+    <div class="content--left">
+      <div class="image">
+        <img src="../assets/home-special-choice.png" alt="" loading="lazy">
+      </div>
+      <div class="content--box">
+        <div class="content--top-left">
+            <p>Special for mom</p>
+        </div>
+        <div class="content--middle-left">
+          <h2>50% OFF for <span>Mother’s day</span> </h2>
+          <p>Elevate Mom's day with a gift that blossoms over time.</p>
+        </div>
+        <div class="content--bottom-left">
+          <a class="button--black" href="#">Find the perfect gift</a>
+        </div>
+      </div>
+    </div>
+    <div class="content--right">
+      <div class="content--top-right">
+        <p>perfect choice</p>
+      </div>
+      <div class="content--middle-right">
+        <h2>Perfect <br><span>Gift Cards </span> </h2>
+        <p>Unlock endless possibilities with our convenient gift cards.</p>
+      </div>
+      <div class="content--bottom-right">
+        <a class="button--black" href="#">Buy Gift cards</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Home special choice",
+  "class": "section home-special-choice-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "presets": [
+    {
+      "name": "Home special choice"
+    }
+  ]
+}
+{% endschema %}

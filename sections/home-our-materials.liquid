@@ -1,0 +1,99 @@
+{{ 'home-our-materials.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+  <div class="row heading-our-materials">
+    <p>our materials</p>
+    <h2>Choose pillows designed <br>
+      <span>for optimal comfort</span></h2>
+  </div>
+  <div class="row">
+    <div class="left-content">
+      <div class="images">
+        <img class="first-image" src="../assets/home-our-materials-img.png" alt="">
+        <img class="second-image" src="../assets/home-our-materials-img2.png" alt="">
+      </div>
+    </div>
+    <div class="right-content drawers">
+        <div class="drawer-child">
+          <label>
+            <input type=checkbox onclick=closeOtherDrawers()>
+            <span>Hand-Embroidered</span>
+            <span class="icon">
+            {% include 'arrow-button' %}
+          </span>
+          </label>
+          <div class=container-drawer>
+            <div class=drawer>
+              The round velvet cushion with a covered button in the middle adds a royal touch to your sofa or armchair and is easy to coordinate.
+            </div>
+          </div>
+        </div>
+        <div class="drawer-child">
+          <label>
+            <input type=checkbox onclick=closeOtherDrawers()>
+            <span>Velvet Cushion</span>
+            <span class="icon">
+              {% include 'arrow-button' %}
+            </span>
+          </label>
+          <div class=container-drawer>
+            <div class=drawer>
+              The round velvet cushion with a covered button in the middle adds a royal touch to your sofa or armchair and is easy to coordinate.
+            </div>
+          </div>
+        </div>
+      <div class="drawer-child">
+        <label>
+          <input type=checkbox onclick=closeOtherDrawers()>
+          <span>100% Cotton </span>
+          <span class="icon">
+              {% include 'arrow-button' %}
+            </span>
+        </label>
+        <div class=container-drawer>
+          <div class=drawer>
+            The round velvet cushion with a covered button in the middle adds a royal touch to your sofa or armchair and is easy to coordinate.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const drawers = document.querySelectorAll('.drawers input');
+    drawers.forEach(drawer => {
+      drawer.addEventListener('change', closeOtherDrawers);
+    });
+
+    if (drawers.length > 0) {
+      drawers[0].checked = true;
+    }
+  });
+
+  function closeOtherDrawers(event) {
+    const thisDrawer = event.target;
+    const drawers = document.querySelectorAll('.drawers input');
+    drawers.forEach(drawer => {
+      if (drawer !== thisDrawer) {
+        drawer.checked = false;
+      }
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Home our materials",
+  "class": "section home-our-materials-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "presets": [
+    {
+      "name": "Home our materials"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,99 @@
+.home-special-choice-section {
+    padding: 100px 0 0 0;
+}
+
+.home-special-choice-section .content--box {
+    gap: 24px;
+}
+
+.home-special-choice-section .content--box h2 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+    margin: 0;
+}
+
+.home-special-choice-section .content--box h2 span {
+    font-style: italic;
+}
+
+.home-special-choice-section .content--middle-left {
+    gap: 16px;
+}
+
+.home-special-choice-section .content--middle-left p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.home-special-choice-section .content--left .image {
+    display: flex;
+    margin-top: 39px;
+}
+
+.home-special-choice-section .content--bottom-left {
+    margin-top: 8px;
+}
+
+.home-special-choice-section .content--left {
+    padding: 0 76px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    border-radius: 20px;
+    background: #C4CAB5;
+}
+
+.home-special-choice-section .content--right {
+    padding: 63px 59px;
+    background: url("home-banner-special-choice.png") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    max-width: 433px;
+}
+
+.home-special-choice-section .content--top-right p {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.home-special-choice-section .content--middle-right h2 {
+    margin: 0;
+    color: #000;
+    font-family: "Libre Baskerville";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+}
+
+.home-special-choice-section .content--middle-right h2 span {
+    font-style: italic;
+}
+
+.home-special-choice-section .content--middle-right p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 16px 0 0;
+}
+
+.home-special-choice-section .content--bottom-right {
+    margin-top: 8px;
+}
+
+.home-special-choice-section .row {
+    align-items: normal;
+}

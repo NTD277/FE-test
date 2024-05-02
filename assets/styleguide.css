@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.ttf')  format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBold.ttf')  format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Italic.ttf')  format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Bold.ttf')  format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Bold.ttf')  format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Regular.ttf')  format('truetype');
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.button--white {
+    display: flex;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 32px;
+    background: #FFF;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.button--white:hover {
+    color: #FFF;
+    background: #000;
+}
+
+.button--black {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 60px;
+    background: #000;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.button--black:hover {
+    background: #FFF;
+    color: #000;
+}

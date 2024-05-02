@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "home_banner_M6Az9m": {
+      "type": "home-banner",
+      "settings": {
+        "content_top_left_text": "Get 20% off the first purchase",
+        "content_top_left_link_label": "Learn More"
+      }
+    },
+    "home_best_selling_yQz7U3": {
+      "type": "home-best-selling",
+      "settings": {
+      }
+    },
+    "home_special_choice_4wRRtj": {
+      "type": "home-special-choice",
+      "settings": {
+      }
+    },
+    "home_our_materials_cY8BFc": {
+      "type": "home-our-materials",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "home_banner_M6Az9m",
+    "home_best_selling_yQz7U3",
+    "home_special_choice_4wRRtj",
+    "home_our_materials_cY8BFc"
+  ]
+}

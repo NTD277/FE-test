@@ -1,0 +1,201 @@
+.home-best-selling-section {
+    padding: 100px 0 0 0;
+}
+
+.heading-best-selling {
+    align-items: flex-end;
+}
+
+.heading p {
+    margin: 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading h2 {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px; /* 123.81% */
+}
+
+.heading h2 span {
+    font-style: italic;
+}
+
+.get-all a {
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    padding: 13px 40px;
+    text-decoration: none;
+}
+
+.get-all a:hover {
+    background: #000;
+    color: #FFF;
+}
+
+.home-best-selling-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home-best-selling-section .swiper-wrapper {
+    padding-bottom: 4px;
+}
+
+.home-best-selling-section .swiper-slide {
+    max-width: 320px;
+}
+
+.box {
+    overflow: hidden;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    display: none;
+}
+
+.swiper-button-next {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 56px;
+    background: #000;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-prev {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 56px;
+    background: #000;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    background: #fff;
+    opacity: 1;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+}
+
+.swiper-button-next.swiper-button-disabled path,
+.swiper-button-prev.swiper-button-disabled path {
+    stroke: #000;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.product-card .sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background: #A04B21;
+}
+
+.product-card .information-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.product-card .information-product .new {
+    color: #A04B21;
+    font-family: "Libre Baskerville";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+}
+
+.product-card .information-product .product-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.product-card .information-product .price--on-sale {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.product-card .information-product .price-item {
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    text-transform: uppercase;
+}
+
+.product-card .information-product .price-product {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.list-products .swiper-slide {
+    background: none;
+}
+
+.list-products a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

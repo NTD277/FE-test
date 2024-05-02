@@ -1,0 +1,166 @@
+{{ 'home-best-selling.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+  <div class="row heading-best-selling">
+    <div class="heading">
+      <p>hot this week</p>
+      <h2>Our <span>Best-Selling</span></h2>
+    </div>
+    <div class="get-all">
+      <a href="#">see all product</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="box">
+      <!-- Swiper -->
+      <div class="swiper list-products">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+          <div class="swiper-slide product-card">
+            <span class="sale">sale</span>
+            <div class="image-product">
+              <img src="../assets/product.png" alt="product image">
+            </div>
+            <div class="information-product">
+              <p class="new">New!</p>
+              <p class="product-name">SVARTPOPPEL</p>
+              <div class="price-product">
+                <span class="price--on-sale">$48</span>
+                <span class="price-item">$56</span>
+              </div>
+            </div>
+            <a href="#" class="link-product"></a>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7.5 3.75L13.75 10L7.5 16.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="swiper-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M12.5 3.75L6.25 10L12.5 16.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".list-products", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Home best selling",
+  "class": "section home-best-selling-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "presets": [
+    {
+      "name": "Home best selling"
+    }
+  ]
+}
+{% endschema %}
